@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se2203.sdaher3_assignment1.SortingHubController">
+   <children>
+      <Button fx:id="sort" layoutX="639.0" layoutY="328.0" mnemonicParsing="false" onAction="#sort" prefHeight="25.0" prefWidth="45.0" text="Sort" />
+      <Button fx:id="reset" layoutX="717.0" layoutY="328.0" mnemonicParsing="false" onAction="#reset" text="Reset" />
+      <ComboBox fx:id="algorithm" layoutX="132.0" layoutY="328.0" onAction="#setSortStrategy" prefWidth="150.0" />
+      <Label layoutX="51.0" layoutY="332.0" text="Algorithm" />
+      <Slider fx:id="arraySize" layoutX="400.0" layoutY="332.0" max="128.0" min="32.0" onDragDetected="#displaySelectedItem" onInputMethodTextChanged="#displaySelectedItem" onMouseClicked="#displaySelectedItem" onMouseDragged="#displaySelectedItem" prefHeight="17.0" prefWidth="170.0" />
+      <Label layoutX="327.0" layoutY="332.0" text="Array Size" />
+      <Label fx:id="sizeDisplay" layoutX="589.0" layoutY="332.0" prefHeight="17.0" prefWidth="45.0" />
+      <Pane fx:id="mainFrame" layoutX="42.0" layoutY="35.0" prefHeight="242.0" prefWidth="723.0" style="-fx-border-color: black;" />
+   </children>
+</AnchorPane>
